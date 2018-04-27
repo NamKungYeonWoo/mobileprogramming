@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="3"
+        >
+        <TableRow>
+            <TextView
+                android:text="성명" />
+
+            <TextView
+                android:layout_span="10"
+                android:id="@+id/Textt"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="성별"/>
+            <TextView
+                android:id="@+id/gender"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="수신여부"/>
+           <TextView
+               android:id="@+id/accept"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이전"
+        android:layout_gravity="right"
+        android:id="@+id/previous"/>
+
+
+</LinearLayout>

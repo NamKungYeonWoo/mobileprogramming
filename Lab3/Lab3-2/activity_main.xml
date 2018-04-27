@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="3"
+        >
+        <TableRow>
+            <TextView
+                android:text="성명" />
+
+            <EditText
+                android:hint=""
+                android:layout_span="3"
+                android:id="@+id/editText"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="성별"/>
+           <RadioGroup
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:orientation="horizontal"
+               android:layout_span="2">
+            <RadioButton
+                android:text="남"
+               android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/male"/>
+            <RadioButton
+                android:text="여"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/female"/>
+           </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="수신여부"/>
+            <CheckBox
+                android:text="SMS"
+                android:id="@+id/sms"/>
+            <CheckBox
+                android:text="e-mail"
+                android:id="@+id/e-mail"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:layout_gravity="right"
+        android:id="@+id/btn"/>
+</LinearLayout>
